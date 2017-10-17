@@ -108,6 +108,65 @@ footer p a{
   font-weight: bolder;
 }
 
+@media (min-width: 768px) {
+    body {
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    h1 {
+    font-size: 3em;
+    margin: 0;
+    padding: 1em 0 1em 0;
+    background-color: #f9f9f9;
+    }
+
+    .nav {
+    padding-left: 0;
+    background-color: #f9f9f9;
+    }
+
+    p {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.5rem;
+    padding-top: 8em;
+    background-color: #f9f9f9;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 10em;
+    }
+
+    .profile-pic {
+    margin-top: 3em;
+    margin-right: 2em;
+    margin-left: 1em;
+    padding: 2em;
+    background-color: #f1f1f1;
+    }
+
+    .section-1 {
+      padding: 0;
+    }
+
+    .tablet-header {
+      background-color: #f9f9f9;
+    }
+
+    .nav li{
+      display: inline;
+      margin-right: 15px;
+
+    }
+
+    .profile-pic {
+      float: right;
+    }
+
+    main {
+      margin-top: 3em;
+    }
+}
+
 
 
 
