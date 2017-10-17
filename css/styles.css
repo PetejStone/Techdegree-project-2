@@ -3,7 +3,21 @@
 
 *{
 box-sizing: border-box;
+}
 
+ol,
+ul {
+  margin:0
+}
+
+body {
+  text-align: center;
+  font-family:'Merriweather', serif;
+  margin: 0 auto;
+}
+
+.nav{
+  padding-left: 0;
 }
 
 .nav li,
@@ -12,13 +26,27 @@ box-sizing: border-box;
   text-decoration: none;
 }
 
+.profile-pic {
+  margin-top: 1em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+.content-header {
+  font-size: 1.5em;
+
+}
+
+p {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1.5rem;
+}
+
 .content-img {
   padding: 0 1em;
   width: 100%;
 }
 
-body {
-  text-align: center;
-  font-family:'Merriweather', serif;
-}
 }
