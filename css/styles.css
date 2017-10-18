@@ -47,6 +47,13 @@ h1 {
 
 .profile-pic {
   margin-top: 3em;
+  border-radius: 10%;
+}
+
+header p a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 h2 {
@@ -75,46 +82,56 @@ p {
   margin: 0 auto;
   padding: 0;
   margin-bottom: 0;
-  overflow: hidden; /* Gets rid of white bar at bottom that isn't a part of
+  display: inline-block;
+  width: 100%;/* Gets rid of white bar at bottom that isn't a part of
                      body*/
-
+  margin-top: 5em;
 }
 
-.contact-src a,
 .contact-src {
+  word-spacing: 1.5em;
+}
+
+.contact-src a {
   word-spacing: 1em;
   text-decoration: none;
   color: #000;
+  font-weight: bolder;
+}
+
+.contact-content {
+  padding: 0 1rem;
 }
 
 footer {
   border-top: 2px solid #ccc;
   background-color: #f9f9f9;
   padding: 0 1rem;
+  margin-top: 5em;
 
 
 }
 
 .footer-name {
   float: left;
-  font-weight: bolder;
+  font-weight: bold;
   /*display: inline-block;*/
 }
 
-footer p a{
+footer p,
+.portrait-footer a {
   text-align: right;
   display: block;
   text-decoration: none;
   color: #000;
-  font-weight: bolder;
+  font-weight: bold;
+}
+
+.footer-nav {
+  display: none;
 }
 
 @media (min-width: 768px) {
-    body {
-      margin: 0 auto;
-      padding: 0;
-      display: inline-block;
-    }
 
     h1 {
     font-size: 3em;
@@ -136,6 +153,7 @@ footer p a{
     margin-bottom: 0;
     margin-top: 0;
     padding-bottom: 10em;
+    padding-left: 1em;
     }
 
     .profile-pic {
@@ -144,6 +162,7 @@ footer p a{
     margin-left: 1em;
     padding: 2em;
     background-color: #f1f1f1;
+    border-radius: 50%;
     }
 
     .section-1 {
@@ -164,10 +183,63 @@ footer p a{
       float: right;
     }
 
-    .tablet-content {
-      width: 50%;
-      display: inline-block;
+    h2 {
+      margin-bottom: 2em;
     }
+
+    .tablet-content {
+      display: inline-block;
+      margin-bottom: 5em;
+    }
+
+    .card {
+      display: inline-block;
+      float: left;
+      width: 50%;
+      padding: 0 1em;
+
+    }
+
+    .portrait-footer a {
+      display: none;
+    }
+
+    .footer-nav {
+      display: inline;
+      float: right;
+    }
+
+    .footer-nav li,
+    .footer-nav li a {
+      list-style-type: none;
+      text-decoration: none;
+      color: #000;
+      background-color: #f9f9f9;
+      font-size: 1.2rem;
+      display: inline-block;
+      margin-left: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+      .tablet-content {
+        display: inline;
+
+      }
+
+      .card {
+        display: inline-block;
+        float: left;
+        width: 33.3%;
+        padding: 0 1em;
+
+  }
+
+      header p {
+        font-size: 2em;
+        padding: 5em 1em 5em 1em;
+      }
+
 
 
 
