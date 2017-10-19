@@ -5,9 +5,9 @@
 box-sizing: border-box;    /*To stop content overlfow*/
 }
 
-.wrap {          /*Fixed content appearing outside of screen*/
-  height: (100vh);
-  width: (100vw);
+.wrap {           /*Fixed content passing beyond screen size on mobile/tablet*/
+width : 100vw;
+height : 100vh;
 }
 
 ol,
@@ -167,10 +167,6 @@ header p a:hover {
 }
 @media (min-width: 768px) {
 
-    .wrap {      /*Fixed content appearing outside screen*/
-      height: (100vh);
-      width: (100vw);
-    }
 
     h1 {
     font-size: 3em;
@@ -259,7 +255,7 @@ header p a:hover {
       margin-left: 1rem;
     }
 
-
+}
 
 @media (min-width: 1024px) {
 
@@ -277,35 +273,5 @@ header p a:hover {
         float: left;
         width: 33.3%;     /*33.3 for 1/3 of the page*/
         padding: 0 1em;
-
-      }
-
-      header p a{
-        display: inline-block; /*Needed for Transform to work*/
-      }
-
-      header p a:hover {
-        transform: scale(1.1); /*Hover added for Treehouse link*/
-      }
-
-      .nav li a {
-        display: inline-block;; /*Needed for transform to work on Nav*/
-      }
-
-      .nav li a:hover {
-        transform: scale(1.1); /*Added transform to nav*/
-      }
-
-      .contact-src a {
-        display: inline-block; /*Needed for transform to work*/
-      }
-
-      .contact-src a:hover {
-        transform: scale(1.1); /*Added transform to contact links*/
-      }
-
-      .footer-nav li a:hover {
-        transform: scale(1.1); /*Added transform to bottom nav*/
-      }
-
+  }
 }
