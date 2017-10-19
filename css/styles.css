@@ -259,6 +259,24 @@ header p a:hover {
 
 @media (min-width: 1024px) {
 
+      h1 {                /*Floated name left to match mockup*/
+      float: left;
+      padding-left: 1em;
+      }
+
+      .main-nav {       /*Aligned nav on right to match mockup*/
+      text-align: right;
+      padding-top: 48px;
+      padding-right: 1em;
+      background-color: #f9f9f9;
+      }
+
+
+      .profile-pic {
+        margin-top: 3em;
+        float: right;
+        display: block;
+      }
 
       .profile-pic:hover {
         transform: scale(1.1); /*Hover added or profie pic*/
