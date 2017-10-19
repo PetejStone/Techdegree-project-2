@@ -200,8 +200,13 @@ header p a:hover {
     border-radius: 50%;
     }
 
-    .section-1 {
-      padding: 0;
+    .section-1 {       /*Shorten gap from main content and contact sec*/
+      padding: 0;;
+      margin-bottom: 0
+    }
+
+    .section-2 {      /*Shorten gap from main content and contact sec*/
+      margin-top: 0;
     }
 
     .tablet-header {
