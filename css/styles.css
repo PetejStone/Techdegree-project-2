@@ -2,22 +2,28 @@
 
 
 * {
-box-sizing: border-box;
+box-sizing: border-box;    /*To stop content overlfow*/
+}
+
+.wrap {          /*Fixed content appearing outside of screen*/
+  height: (100vh);
+  width: (100vw);
 }
 
 ol,
 ul {
-  margin:0
+  margin:0      /*Resetting margins*/
 }
 
 body {
   text-align: center;
-  font-family:'Merriweather', serif;
-  margin: 0 auto;
+  font-family:'Merriweather', serif; /* Google Font 1 of 2*/
+  margin: 0 auto;     /*Resetting margins*/
   display: inline-block;
 }
 
-.section-1 {
+.section-1 {        /*split into sections to separate main content section
+                       and contact and footer sections*/
   margin: 0 0 5em 0;
   padding: 0 1em;
 }
@@ -37,10 +43,11 @@ h1 {
 .nav li a{
   list-style-type: none;
   text-decoration: none;
-  color: black;
+  color: #000;
   padding: 2px;
   margin-bottom: 6px;
-  background-color: #f9f9f9;
+  background-color: #f9f9f9;  /*Changed background color of nav and footer
+                                will be seen throughout CSS*/
   font-size: 1.2em;
 
 }
@@ -52,7 +59,7 @@ h1 {
 
 header p a {
   text-decoration: none;
-  color: black;
+  color: #000;
   font-weight: bold;
 }
 
@@ -67,7 +74,7 @@ h2 {
 }
 
 p {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif; /*Google font 2 of 2*/
   font-size: 1.5rem;
 }
 
@@ -95,7 +102,7 @@ p {
 .contact-src a {
   word-spacing: 1em;
   text-decoration: none;
-  color: #000;
+  color: #000080; /* New Color of Text*/
   font-weight: bolder;
 }
 
@@ -131,7 +138,39 @@ footer p,
   display: none;
 }
 
+header p a{
+  display: inline-block; /*Needed for Transform to work*/
+}
+
+header p a:hover {
+  transform: scale(1.1); /*Hover added for Treehouse link*/
+}
+
+.nav li a {
+  display: inline-block;; /*Needed for transform to work on Nav*/
+}
+
+.nav li a:hover {
+  transform: scale(1.1); /*Added transform to nav*/
+}
+
+.contact-src a {
+  display: inline-block; /*Needed for transform to work*/
+}
+
+.contact-src a:hover {
+  transform: scale(1.1); /*Added transform to contact links*/
+}
+
+.footer-nav li a:hover {
+  transform: scale(1.1); /*Added transform to bottom nav*/
+}
 @media (min-width: 768px) {
+
+    .wrap {      /*Fixed content appearing outside screen*/
+      height: (100vh);
+      width: (100vw);
+    }
 
     h1 {
     font-size: 3em;
@@ -148,7 +187,7 @@ footer p,
     header p {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 1.5rem;
-    padding-top: 8em;
+    padding-top: 8em;     /*Got padding # from dev tools to center content*/
     background-color: #f9f9f9;
     margin-bottom: 0;
     margin-top: 0;
@@ -192,7 +231,7 @@ footer p,
       margin-bottom: 5em;
     }
 
-    .card {
+    .card {                 /*card class needed to create rows*/
       display: inline-block;
       float: left;
       width: 50%;
@@ -219,32 +258,54 @@ footer p,
       display: inline-block;
       margin-left: 1rem;
     }
-}
+
+
 
 @media (min-width: 1024px) {
+
+
+      .profile-pic:hover {
+        transform: scale(1.1); /*Hover added or profie pic*/
+      }
+
       .tablet-content {
         display: inline;
-
       }
 
       .card {
         display: inline-block;
         float: left;
-        width: 33.3%;
+        width: 33.3%;     /*33.3 for 1/3 of the page*/
         padding: 0 1em;
 
-  }
-
-      header p {
-        font-size: 2em;
-        padding: 5em 1em 5em 1em;
       }
 
+      header p a{
+        display: inline-block; /*Needed for Transform to work*/
+      }
 
+      header p a:hover {
+        transform: scale(1.1); /*Hover added for Treehouse link*/
+      }
 
+      .nav li a {
+        display: inline-block;; /*Needed for transform to work on Nav*/
+      }
 
+      .nav li a:hover {
+        transform: scale(1.1); /*Added transform to nav*/
+      }
 
+      .contact-src a {
+        display: inline-block; /*Needed for transform to work*/
+      }
 
+      .contact-src a:hover {
+        transform: scale(1.1); /*Added transform to contact links*/
+      }
 
+      .footer-nav li a:hover {
+        transform: scale(1.1); /*Added transform to bottom nav*/
+      }
 
 }
