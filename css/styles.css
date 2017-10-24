@@ -5,7 +5,7 @@
 box-sizing: border-box;    /*To stop content overlfow*/
 }
 
-.wrap {           /*Fixed content passing beyond screen size on mobile tablet*/
+.wrap {           
 width : 100vw;
 height : 100vh;
 }
